@@ -81,14 +81,14 @@ var htmlTemplate=`<html>
 return htmlTemplate;
 }
 app.get('/', function (req, res) {
-  res.send(createTemplate(articleOne));
+  res.sendFile(path.join(_dirname,'ui','index.html'));
 });
 app.get('/:articleName',function(req,res)
 //articleName==article-one
 //articles[articleName]=={} content object for article 4one
 {
  var articleName=req.params.articleName;
-   res.sendFile(path.join(__dirname, 'ui', articles[articleName]));
+   res.send(createTemplate(articles[articleName]));
 });
 
     
