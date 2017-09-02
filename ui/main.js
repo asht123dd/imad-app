@@ -88,10 +88,10 @@ var request =new XMLHttpRequest();
         //Not done yet
 };
     
-/*   //Make the request
+   //Make the request
    var nameInput=document.getElementById('comment');
 var name=nameInput.value;
     request.open('GET','http://asht123dd.imad.hasura-app.io/submit-name?name='+name,true);
     request.send(null);
-    */
+    
 };
