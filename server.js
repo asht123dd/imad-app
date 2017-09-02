@@ -38,14 +38,6 @@ var articles={
             `}
 
 };
-var comments={
-  content:` <span class="counter">counter</span>
-            <input  type="text" id="comment2" placeholder="comment"></input>
-            <input type="submit" value="Submit" id="submit_btn3"></input>
-            <ul id="commentlist2">
-                
-            </ul>`
-}
 function createTemplate(data)
 {
  var title=data.title;
@@ -94,8 +86,8 @@ app.get('/', function (req, res) {
 var counter=0;
 app.get('/counter',function(req,res){
     counter+=1;
-   // res.send(counter.toString());
-    res.send(createTemplate(comments));
+    res.send(counter.toString());
+   // res.send(createTemplate(comments));
 });
  var names=[];
   app.get('/submit-name',function(req,res){//URL: /submit-name?name=?????
