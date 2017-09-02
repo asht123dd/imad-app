@@ -39,8 +39,8 @@ var articles={
 
 };
 var comments={
-  content:` counter.toString();
-            <input type="text" id="comment2" placeholder="comment"></input>
+  content:` <span class="counter">counter</span>
+            <input  type="text" id="comment2" placeholder="comment"></input>
             <input type="submit" value="Submit" id="submit_btn3"></input>
             <ul id="commentlist2">
                 
