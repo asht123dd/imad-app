@@ -115,7 +115,7 @@ var request =new XMLHttpRequest();
                  {
                      list+='<li>'+comments[i]+'</li>';
                  }
-                var ul=document.getElementById('commentlist');
+                var ul=document.getElementById('commentlist2');
                 ul.innerHTML=list;
                 
             }
@@ -124,7 +124,77 @@ var request =new XMLHttpRequest();
 };
     
    //Make the request
-   var nameInput=document.getElementById('comment');
+   var nameInput=document.getElementById('comment2');
+var name=nameInput.value;
+    request.open('GET','http://asht123dd.imad.hasura-app.io/submit-name?name='+name,true);
+    request.send(null);
+    
+};
+var submit4=document.getElementById('submit_btn4');
+submit4.onclick=function(){
+    //Make a request to the server and send a comment
+//Capture a lsit of comments and render it as a list.
+var request =new XMLHttpRequest();
+    //Capture the response and store it in a variable
+    request.onreadystatechange=function(){
+        if(request.readyState===XMLHttpRequest.DONE)
+        {
+            //Take some action
+            if(request.status===200)
+            {
+     //Capture a list of names and render it as a list
+                var comments=request.responseText;
+                comments=JSON.parse(comments);
+                 var list='';
+                 for(var i=0;i<comments.length;i++)
+                 {
+                     list+='<li>'+comments[i]+'</li>';
+                 }
+                var ul=document.getElementById('commentlist3');
+                ul.innerHTML=list;
+                
+            }
+        }
+        //Not done yet
+};
+    
+   //Make the request
+   var nameInput=document.getElementById('comment3');
+var name=nameInput.value;
+    request.open('GET','http://asht123dd.imad.hasura-app.io/submit-name?name='+name,true);
+    request.send(null);
+    
+};
+var submit5=document.getElementById('submit_btn5');
+submit5.onclick=function(){
+    //Make a request to the server and send a comment
+//Capture a lsit of comments and render it as a list.
+var request =new XMLHttpRequest();
+    //Capture the response and store it in a variable
+    request.onreadystatechange=function(){
+        if(request.readyState===XMLHttpRequest.DONE)
+        {
+            //Take some action
+            if(request.status===200)
+            {
+     //Capture a list of names and render it as a list
+                var comments=request.responseText;
+                comments=JSON.parse(comments);
+                 var list='';
+                 for(var i=0;i<comments.length;i++)
+                 {
+                     list+='<li>'+comments[i]+'</li>';
+                 }
+                var ul=document.getElementById('commentlist4');
+                ul.innerHTML=list;
+                
+            }
+        }
+        //Not done yet
+};
+    
+   //Make the request
+   var nameInput=document.getElementById('comment4');
 var name=nameInput.value;
     request.open('GET','http://asht123dd.imad.hasura-app.io/submit-name?name='+name,true);
     request.send(null);
