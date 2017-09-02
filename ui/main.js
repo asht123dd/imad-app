@@ -73,25 +73,25 @@ var request =new XMLHttpRequest();
             if(request.status===200)
             {
      //Capture a list of names and render it as a list
-     var comments=request.responseText;
-     comments=JSON.parse(comments);
-     var list='';
-     for(var i=0;i<comments.length;i++)
-     {
-         list+='<li>'+comments[i]+'</li>';
-     }
-            var ul=document.getElementById('commentlist');
-            ul.innerHTML=list;
+                var comments=request.responseText;
+                comments=JSON.parse(comments);
+                 var list='';
+                 for(var i=0;i<comments.length;i++)
+                 {
+                     list+='<li>'+comments[i]+'</li>';
+                 }
+                var ul=document.getElementById('commentlist');
+                ul.innerHTML=list;
                 
             }
         }
         //Not done yet
-    };
+};
     
-   //Make the request
+/*   //Make the request
    var nameInput=document.getElementById('comment');
 var name=nameInput.value;
     request.open('GET','http://asht123dd.imad.hasura-app.io/submit-name?name='+name,true);
     request.send(null);
-    
+    */
 };
