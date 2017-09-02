@@ -19,6 +19,11 @@ var articles={
             <p>
                 This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article.
             </p>
+            <input type="text" id="comment2" placeholder="comment"></input>
+            <input type="submit" value="Submit" id="submit_btn3"></input>
+            <ul id="commentlist2">
+                
+            </ul>
             `
     
 },
@@ -28,13 +33,25 @@ var articles={
     content:
             ` <p>
                 This is the content for my second article.            </p>
-            `},
+            <input type="text" id="comment3" placeholder="comment"></input>
+            <input type="submit" value="Submit" id="submit_btn4"></input>
+            <ul id="commentlist3">
+                
+            </ul>
+            `
+    
+},
 'article-three':{title:'Article Three | Ashutosh Singh',
     heading:'Article Three',
     date:'Sep 13, 2017',
     content:
             ` <p>
                 This is the content for my third article.            </p>
+            <input type="text" id="comment4" placeholder="comment"></input>
+            <input type="submit" value="Submit" id="submit_btn5"></input>
+            <ul id="commentlist4">
+                
+            </ul>
             `}
 
 };
