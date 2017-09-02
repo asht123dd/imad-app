@@ -19,7 +19,7 @@ var articles={
             <p>
                 This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article.
             </p>
-            <input type="text" id="comment2" placeholder="comment"></input>
+            <input type="text" id="comment2" placeholder="comment2"></input>
             <input type="submit" value="Submit" id="submit_btn3"></input>
             <ul id="commentlist2">
                 
@@ -33,7 +33,7 @@ var articles={
     content:
             ` <p>
                 This is the content for my second article.            </p>
-            <input type="text" id="comment3" placeholder="comment"></input>
+            <input type="text" id="comment3" placeholder="comment3"></input>
             <input type="submit" value="Submit" id="submit_btn4"></input>
             <ul id="commentlist3">
                 
@@ -47,7 +47,7 @@ var articles={
     content:
             ` <p>
                 This is the content for my third article.            </p>
-            <input type="text" id="comment4" placeholder="comment"></input>
+            <input type="text" id="comment4" placeholder="comment4"></input>
             <input type="submit" value="Submit" id="submit_btn5"></input>
             <ul id="commentlist4">
                 
