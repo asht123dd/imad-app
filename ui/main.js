@@ -126,7 +126,7 @@ var request =new XMLHttpRequest();
    //Make the request
    var nameInput=document.getElementById('comment99');
 var name=nameInput.value;
-    request.open('GET','http://asht123dd.imad.hasura-app.io/,true);
+    request.open('GET','http://asht123dd.imad.hasura-app.io/submit-name?name='+name,true);
     request.send(null);
     
 };
